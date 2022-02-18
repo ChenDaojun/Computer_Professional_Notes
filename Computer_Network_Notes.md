@@ -26,7 +26,7 @@
     - 资源子网 实现**资源共享**/数据处理
 
 ![计算机网络组成](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Computer-Network-images(screenshot)/number1.png)
-
+![总结](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Computer-Network-images(screenshot)/number2.png)
 **标准化工作**  
 
 标准的分类：
@@ -46,4 +46,4 @@ RFC要上升位因特网正式标准的**四个阶段**：
 - 国际电子电气工程师协会 IEEE：学术机构、IEEE802系列标准、5G
 - Internet工程任务组 IETF：负责因特网相关标准的制定 
 
-![思维导图]()
+![思维导图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Computer-Network-images(screenshot)/number3.png)
