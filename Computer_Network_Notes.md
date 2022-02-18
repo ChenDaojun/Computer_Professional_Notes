@@ -25,7 +25,7 @@
     - 通信子网 实现**数据通信**
     - 资源子网 实现**资源共享**/数据处理
 
-![计算机网络组成](https://github.com/ChenDaojun/Computer_Professional_Notes/blob/main/images/Computer-Network-images(screenshot)/number1.png)
+![计算机网络组成](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Computer-Network-images(screenshot)/number1.png)
 
 **标准化工作**  
 
