@@ -26,3 +26,24 @@
     - 资源子网 实现**资源共享**/数据处理
 
 ![计算机网络组成](https://github.com/ChenDaojun/Computer_Professional_Notes/blob/main/images/Computer-Network-images(screenshot)/number1.png)
+
+**标准化工作**  
+
+标准的分类：
+- 法定标准：由权威机构制定的正式的、合法的标准 [OSI]
+- 事实标准：某些公司的产品在竞争中占据了主流，时间长了，这些产品的协议和技术就成为了标准
+
+RFC(Fequest For Comments) --因特网标准的形式  
+RFC要上升位因特网正式标准的**四个阶段**：
+1. 因特网草案(Internet Draft) 这个阶段还不是RFC文档。
+2. 建议标准(Proposed Standard) 从这个阶段开始成为RFC文档。
+3. _草案标准(Draft Standard) 通过IETF、IAB审核_ (自2011起取消)
+4. 因特网标准(Internet Standard)
+
+标准化工作的相关组织
+- 国际标准化组织 ISO ：建立OSI参考模型、HDLC协议
+- 国际电信联盟 ITU：制定通信规则
+- 国际电子电气工程师协会 IEEE：学术机构、IEEE802系列标准、5G
+- Internet工程任务组 IETF：负责因特网相关标准的制定 
+
+![思维导图]()
