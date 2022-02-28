@@ -47,3 +47,16 @@ RFC要上升位因特网正式标准的**四个阶段**：
 - Internet工程任务组 IETF：负责因特网相关标准的制定 
 
 ![思维导图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Computer-Network-images(screenshot)/number3.png)
+
+---
+
+## 速率
+- 速率即 **数据率** 或成 **数据传输率** 或 **比特率**
+- 比特 1/0 位
+- 连接在计算机网络上的 **主机** 在数字信道上传送数据 **位数的速率**
+- 单位是 b/s , kb/s, Mb/s, Gb/s, Tb/s
+
+1. 千 $1kb/s = 10³b/s$
+2. 兆 $1Mb/s = 10³kb/s = 10^6b/s$
+3. 吉 $1Gb/s = 10³Mb/s = 10^6kb/s = 10^9b/s$
+4. 太 $1Tb/s = 10³Gb/s = 10^9kb/s = 10^{12}b/s$
