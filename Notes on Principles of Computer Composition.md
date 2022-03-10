@@ -91,4 +91,71 @@
       - ![操作过程](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/number9.png)
       - ![加法操作过程](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/number10.png)
       - ![减法操作过程](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/11.png)
-      - ![乘法操作过程]()
+      - ![乘法操作过程](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/12.png) --M 和 ACC 可以同时进行。
+      - ![除法操作过程](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/13.png)
+   - 控制器的基本结构
+     - 控制器的功能:
+       - 解释指令
+       - 保证指令的按序执行
+     - ![完成一条指令](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/14.png)
+     - ![控制器的基本组成](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/15.png)
+     - PC:程序计数器
+       - 存放当前欲执行指令的地址，具有计数功能(PC)+1 ——> PC
+     - IR:指令寄存器
+       - 存放当前欲执行的指令
+     - CU:控制单元
+   - 运算器、控制器、存储器构成了什么？
+     - 一条指令在主机上的完成过程
+     - 程序在主机上是如何执行的
+   - 主机完成一条指令的过程
+     - ![以取数指令为例](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/16.png)
+     - ![取数指令结果](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/17.png)
+   - ![存数指令](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/18.png)
+   - ax² + bx² + c 程序的运行过程
+     - 将程序通过输入设备送至计算机
+     - 程序首地址 ——> PC
+     - 启动程序运行
+     - 取指令 PC ——> MAR ——> M ——> MDR ——> IR
+     - 分析指令 **OP**(IR) ——> CU  **OP**--IR操作码的标识  //(PC) + 1 ——> PC 完成乘法指令
+     - 执行指令 Ad(IR) ——> MAR ——> M ——> MDR ——> ACC  --**Ad**是IR操作码的标识
+     - **循环
+     - 打印结果
+     - 停机
+   - 如果打算买一台机器，如何进行合适的选择？
+     - 买这台机器做什么
+     - 你有多少钱
+     - 机器的性能能否满足你的要求
+       > 如何在购买前对计算机的性能进行评价
+       > > 处理速度快，内存容量大
+   - 计算机硬件的主要技术指标  
+    1. 机器字长
+      > CPU一次能处理数据的位数
+      > > 与CPU中的 **寄存器位数** 有关
+   - 运算速度
+    > 主频
+    > 核数，每个核支持的线程数
+    > 吉普森法 ![吉普森法](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/19.png)
+    > CPI 执行一条指令所需时钟周期数
+    > MIPS 每秒执行百万条指令
+    > FLOPS 每秒浮点数运算次数 --从机器能做多少操作的角度进行衡量
+  - 存储容量 --存放二进制信息的总位数
+    - 主存容量
+      - 存储单元个数 x 存储字长
+       > 如 MAR MDR 容量
+        > > ![图例](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/20.png)
+        - 字节数
+        - - ![例图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/21.png)
+      - 辅存容量
+        - 例:字节数 80GB
+        - 1GB = 2 $30$B
+  ## 计算机的发展及应用
+   - 计算机的发展史
+     - 计算机的产生和发展
+       - 1946年 美国 ENIAC
+       - 十进制运算
+       - 18000 多个电子管
+       - 1500 多个继电器
+       - 150 千瓦
+       - 30 吨
+       - 1500 平方英尺
+       - 5000 次加法/秒
