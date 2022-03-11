@@ -1,6 +1,9 @@
 # 计算机组成原理笔记
-
-## 1.1 计算机系统简介  
+- [计算机组成原理笔记](#计算机组成原理笔记)
+  - [第一章 计算机系统简介](#第一章-计算机系统简介)
+  - [第二章 计算机的发展及应用](#第二章-计算机的发展及应用)
+  - [第三章 系统总线](#第三章-系统总线)
+## 第一章 计算机系统简介  
 - 计算机的软硬件概念  
   
 - 1.计算机系统
@@ -148,7 +151,8 @@
       - 辅存容量
         - 例:字节数 80GB
         - 1GB = 2 $30$B
-  ## 计算机的发展及应用
+- --
+  ## 第二章 计算机的发展及应用
    - 计算机的发展史
      - 计算机的产生和发展
        - 1946年 美国 ENIAC
@@ -159,3 +163,159 @@
        - 30 吨
        - 1500 平方英尺
        - 5000 次加法/秒
+     - ![世界上第一台计算机 ENIAC(1946)](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/22.png)
+     - 现代计算机产生的驱动力
+       - 需求，需求，还是需求
+       - 技术发展
+         - 电子技术的发展
+         - 计算机体系结构技术的发展
+       - 硬件技术对计算机更新换代的影响
+     - ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/23.png)
+     - ![von Neumann系统结构的计算机](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/24.png)
+     - ![IAS的逻辑结构](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/25.png)
+     - ![IBM 360照片](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/26.png)
+
+     - 微型计算机的出现和发展
+      - 微处理器芯片  ——1971年，由Intel公司开发
+        - 4位(4004)
+        - 8位
+        - 16位
+        - 32位
+        - 64位
+      - 存储器芯片  ——1970年
+        - 256位
+        - 1k位
+        - 4k位
+        - 16k位
+        - 64k位
+        - 256k位
+        - 1M位
+        - 4M位
+        - 16M位
+        - 64M位
+      - ![Intel公司典型的微处理器产品](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/27.png)
+      - Moore 定律
+        - Intel公司的缔造者之一，Gordon Moore提出
+        - 微芯片上集成的晶体管数目每三年翻两番
+        - 每隔18个月番一番，性能提升一倍
+     - 三、软件技术的兴起和发展
+      - 各种语言
+        - 机器语言  面向机器
+        - 汇编语言  面向机器
+        - 高级语言  面向问题
+          - FORTRAN 科学计算和工程计算
+          - PASCAL 结构化程序设计
+          - C++  面向对象
+          - Java 适应网络环境
+      - 系统软件
+        - **语言处理程序**  汇编程序 编译程序
+        - 操作系统  DOS、UNIX、Windows、Linux、Kylin Linux
+        - 服务性程序 装配 调试 诊断 排错
+        - 数据库管理系统 数据库和数据库管理软件
+        - 网络软件
+      - 软件发展的特点
+        - 开发周期长
+        - 制作成本昂贵
+        - 检测软件产品质量的特殊性
+        - 软件是程序以及开发、使用和维护程序所需要的所有文档
+      - 计算机的应用
+        - 科学计算和数据处理
+        - 工业控制和实时控制
+        - 网络技术
+          - 电子商务
+          - 网络教育
+          - 敏捷制造
+        - 虚拟现实
+        - 办公自动化和管理信息系统
+        - CAD/CAM/CIMS
+          - CAD: 计算机辅助设计
+          - CAM: 计算机辅助制造
+          - CIMS: 计算机集成制造系统
+        - 多媒体技术
+        - 人工智能
+      - 计算机的展望
+        - 一、计算机具有类似人脑的一些超级智能功能
+          - 要求计算机的速度要足够快
+        - 二、芯片集成度的提高受以下三方面的限制
+          - 芯片集成度受物理极限的制约
+          - 按几何级数递增的制作成本
+          - 芯片的功耗、散热、线延迟
+        - 三、替代传统的硅芯片
+          - 光计算机
+            - 利用光子取代电子进行运算和存储
+          - DNA生物计算机
+            - 通过控制DNA分子间的生化反应
+          - 量子计算机
+            - 利用原子所具有的量子特性
+
+---
+
+## 第三章 系统总线
+ 3.1 总线的基本概念  
+ 3.2 总线的分类  
+ 3.3 总线特征及性能指标  
+ 3.4 总线结构  
+ 3.5 总线控制  
+
+  - 3.1 总线的基本概念
+    - 一、为什么要用总线？
+    - 二、什么是总线
+      - 总线是连接各个部件的信息传输线，是 **各个部件共享的传输介质**
+    - 三、总线上信息的传送
+      - 串行 一串的一串的传输，一串一串的接收
+      - 并行 多串同时传输，同时接收
+    - 四、总线结构的计算机举例
+    - 1、单总线结构框图
+      - ![单总线](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/28.png)
+    - 2、面向 CPU 的双总线结构框图
+      - ![以CPU为主的双总线](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/29.png)
+    - 3、以存储器为中心的双总线结构框架
+      - ![以存储器为主的双总线](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/30.png)
+      
+  - 3.2 总线的分类
+    - 1.片内总线  芯片内部的总线
+    - 2.系统总线  **计算机各部件之间** 的信息传输线
+      - 数据总线  **双向** 与机器字长、存储字长有关
+      - 地址总线  **单向** 与存储地址、I/O地址有关
+      - 控制总线  **有出** **有入**
+        - 有出: 存储器读、存储器写、总线允许、中断确认
+        - 有入:中断请求、总线请求
+    - 3.通信总线
+      - 用于 **计算机系统之间** 或 **计算机系统与其他系统** (如控制仪表、移动通信等) 之间的通信
+        - 传输方式:**串行通信总线** 或 **并行通信总线**
+  - 3.3 总线特性及性能指标
+    - 一、总线物理实现
+      - ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/31.png)
+    - 二、总线特性
+      - 1.机械特性  **尺寸**、形状、**管脚数** 及 **排列顺序**
+      - 2.电气特性  **传输方向** 和有效的 **电平** 范围
+      - 3.功能特性  每根传输线的 **功能**
+        - 地址
+        - 数据
+        - 控制
+      - 4.时间特性  信号的 **时序** 关系
+    - 三、总线的性能指标
+      - 1.总线宽度  **数据线** 的根数
+      - 2.标准传输率  每秒传输的最大字节数(**MBps**)
+      - 3.时钟同步/异步  **同步**、**不同步**
+      - 4.总线复用  **地址线** 与 **数据线** 复用
+      - 5.信号线数  地址线、数据线和控制线的 **总和**
+      - 6.总线控制方式  突发、自动、仲裁、逻辑、计数
+      - 7.其他指标  **负载能力**
+    - 四、总线标准
+      - 标准界面 多个模块或系统同时遵守的标准
+      - 总线标准 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/32.png)
+  - 3.4 总线结构
+    - 一、单总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/33.png) 
+    - 二、多总线结构 
+    - 1.双总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/34.png)
+    - 2.三总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/35.png)
+    - 3.三总线结构的又一形式 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/36.png)
+    - 4.四总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/37.png)
+    - 三、总线结构举例
+    - 1.传统微型机总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/38.png)
+    - 2.VL-BUS局部总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/39.png)
+    - 3.PCI总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/40.png)
+    - 4.多层 PCI 总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/41.png)
+  - 3.5 总线控制
+    - 一、总线判优控制
