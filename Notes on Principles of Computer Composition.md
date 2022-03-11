@@ -319,3 +319,13 @@
     - 4.多层 PCI 总线结构 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/41.png)
   - 3.5 总线控制
     - 一、总线判优控制
+      - 1.基本概念
+        - 主设备(模块)  对总线有 **控制权**
+        - 从设备(模块)  **响应** 从主设备发来的总线命令
+        - 总线判优控制
+          - 集中式 
+            - 链式查询
+            - 计数器定时查询
+            - 独立请求方式
+          - 分布式
+      - 2.链式查询方式 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/42.png)
