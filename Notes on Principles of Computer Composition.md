@@ -422,3 +422,28 @@
       - 速度由快到慢
       - 容量从小到打
       - 价格从高到低
+      - 2.缓存——主存层次和主存——辅存层次 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/51.png)
+      - ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/52.png)
+      - ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/53.png)
+      - 缓存 —— 主存  (容量)
+      - 主存 —— 辅存  (速度)
+        - 虚拟存储器 
+        - 虚地址
+        - 逻辑地址
+      - 主存储器用到的地址
+        - 实地址
+        - 物理地址
+
+
+  - 4.2 **主存储器**——概述
+  - 
+  - 1.主存的基本组成
+  - 2.主存和CPU之间的联系
+  - 3.主存中存储单元地址的分配
+  - 4.主存的技术指标
+    
+    - 一、概述
+      - 1.主存的基本组成 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/54.png)
+      - 2.主存和CPU的联系 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/55.png)
+      - 3.主存中存储单元地址的分配 
+        - 12345678H 这个数据如何在 **主存储器中进行存储？**
