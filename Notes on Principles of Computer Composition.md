@@ -447,3 +447,4 @@
       - 2.主存和CPU的联系 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/55.png)
       - 3.主存中存储单元地址的分配 
         - 12345678H 这个数据如何在 **主存储器中进行存储？**
+        - **高位字节** ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/56.png)
