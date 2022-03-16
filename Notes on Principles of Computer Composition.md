@@ -3,6 +3,7 @@
   - [第一章 计算机系统简介](#第一章-计算机系统简介)
   - [第二章 计算机的发展及应用](#第二章-计算机的发展及应用)
   - [第三章 系统总线](#第三章-系统总线)
+  - [第四章 存储器](#第四章-存储器)
 ## 第一章 计算机系统简介  
 - 计算机的软硬件概念  
   
@@ -329,3 +330,95 @@
             - 独立请求方式
           - 分布式
       - 2.链式查询方式 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/42.png)
+      - 3.计数器定时查询方式 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/43.png)
+        ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/44.png)
+      - 4.独立请求方式 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/45.png)
+    - 二、总线通信协议
+      - 1.目的  解决通信双方 **协调配合** 问题
+      - 2.总线传输周期
+        - 申请分配阶段  **主模块申请**，总线仲裁决定 
+        - 寻址阶段  主模块向从模块 **给出地址** 和 **命令**
+        - 传数阶段  主模块 和 从模块 **交换数据**
+        - 结束阶段  主模块 **撤销有关信息** 同时从模块也撤销
+      - 3.总线通信的四种方式
+        - 同步通信  由 **统一时标** 控制数据传送
+        - 异步通信  采用 **应答方式**，没有公共时钟标准
+        - 半同步通信  同步、**异步结合**
+        - 分离式通信  充分 **挖掘** 系统 **总线每个瞬间** 的潜力
+        - (1)同步式数据输入 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/46.png)
+        - (2)同步式数据输出 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/47.png)
+        - (3)异步通信 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/48.png)
+        - (4)半同步通信(同步、异步结合)
+          - 同步  **发送方** 用系统 **时钟前沿** 发信号
+          - **接收方**  用系统 **时钟后沿** 判断、识别
+          - 异步  允许不同速度的模块和谐工作
+          - 增加一条 **“等待”响应信号**  WAIT信号(等待信号)
+          - ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/49.png)
+        - **以输入数据为例的半同步通信时序**
+          - T1 主模块发地址
+          - T2 主模块发命令
+          - Tw 当 WAIT 为低电平时，等待一个T
+          - Tw 当 WAIT 为低电平时，等待一个T
+          - ...
+          - T3 从模块提供数据
+          - T4 从模块撤销数据，主模块撤销命令
+        - 上述三种通信的共同点
+        - **一个总线传输周期**(**以输入数据为例**)
+          - 主模块发地址、命令  **占用总线**
+          - 从模块准备数据  **不占用总线**  总线空闲
+          - 从模块向主模块发数据  **占用总线**
+        - (5)分离式通信
+          - **充分挖掘系统总线每个瞬间的潜力**
+          - 一个总线传数周期
+          - 分成两个子周期
+            - 子周期1  **主模块** 申请 **占用总线**，使用完后即 **放弃总线** 的使用权
+            - 子周期2  **从模块**(从模块可变成主模块) 申请 **占用总线**，将各种信息送至总线上
+            - 分离式通信特点
+              - 1.各模块有权申请占用总线
+              - 2.采用同步方式通信，不等对方回答
+              - 3.各模块准备数据时，不占用总线
+              - 4.总线被占用时，无空闲
+
+---
+
+## 第四章 存储器
+ 4.1 概述
+  - 存储器可分哪些类型？
+  - 现代存储器的层次架构，为什么要分层？
+ 
+---
+
+  - **4.1** 概述
+    - 一、**存储器分类**
+    - 1.**按存储介质分类**
+      - (1)半导体存储器  TTL、MOS  **易失**
+      - (2)磁表面存储器  磁头，载磁体
+      - (3)磁芯存储器  硬磁材料、环状元件
+      - (4)光盘存储器  激光、磁光材料
+      - 以上三个都是非易失
+    - 二、按存取方式分类
+      - (1)存取时间和物理地址无关(随机访问)
+        - 随机存储器  **在程序的执行过程中** 可 **读** 可 **写**
+        - 只读存储器  **在程序的执行过程中** **只读**
+      - (2)存取时间与物理地址有关(串行访问)
+        - 顺序存取存储器  磁带
+        - 直接存取存储器  磁盘
+    - 3、按在计算机中的作用分类
+      - 存储器
+        - 主存储器
+          - RAM
+            - 静态RAM
+            - 动态RAM
+          - ROM
+            - MROM
+            - PROM
+            - EPROM
+            - EEPROM
+        - Flash Memory
+        - 高速缓冲存储器 (Cache)
+        - 辅助存储器  磁盘、磁带、光盘
+    - 三、存储器的层次结构
+      - 1.存储器三个主要特征的关系 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/50.png)
+      - 速度由快到慢
+      - 容量从小到打
+      - 价格从高到低
