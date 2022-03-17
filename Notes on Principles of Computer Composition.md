@@ -448,3 +448,29 @@
       - 3.主存中存储单元地址的分配 
         - 12345678H 这个数据如何在 **主存储器中进行存储？**
         - **高位字节** ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/56.png)
+        - **低位字节** 地址为字地址  ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/57.png)
+        - 设地址线 **24** 根  按 **字节** 寻址 $2^{24}$
+        - 若字长为 **16** 位  按 **字** 寻址  8MW  W即word，字
+        - 若字长 **32** 位  按 **字** 寻址  4MW
+      - 4.主存的技术指标
+        - (1)存储容量  **主存** **存放二进制代码的总位数**
+        - (2)存储速度  
+          - 存取时间  存储器的 **访问时间**  
+            - 读出时间 写入时间
+          - 存取周期  **连续两次独立的存储器操作**
+            - (读或写) 所需的 **最小间隔时间**
+            - 读周期  写周期
+          - (3)存储器的带宽  **位**/**秒**
+
+  - 4.2 主存储器 ——半导体芯片简介
+    - 1.半导体存储芯片的基本结构
+    - 2.半导体存储芯片的译码驱动方式
+      - 线选法
+      - 重合法
+
+      1.半导体存储芯片的基本结构  ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/58.png)
+      ![片选线](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/59.png)
+      - 存储芯片片选线的作用
+        - 用 16k x 1位 的存储芯片组成 64k x 8位 的存储器  ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/60.png)
+      2.半导体存储芯片的译码驱动方式
+      - (1)线选法
