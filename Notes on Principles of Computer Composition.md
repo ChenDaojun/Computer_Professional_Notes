@@ -473,4 +473,4 @@
       - 存储芯片片选线的作用
         - 用 16k x 1位 的存储芯片组成 64k x 8位 的存储器  ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/60.png)
       2.半导体存储芯片的译码驱动方式
-      - (1)线选法
+      - (1)线选法 ![图]()
