@@ -473,4 +473,19 @@
       - 存储芯片片选线的作用
         - 用 16k x 1位 的存储芯片组成 64k x 8位 的存储器  ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/60.png)
       2.半导体存储芯片的译码驱动方式
-      - (1)线选法 ![图]()
+      - (1)线选法 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/61.png)
+      - (2)重合法 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/62.png)
+
+  - 4.2 主存储器 ——随机存取存储器
+    - 1.**静态RAM**(**SRAM**)
+      - 保存 0 和 1 的原理是什么？
+      - 基本单元电路的构成是什么？
+      - 对单元电路如何读出和写入？
+      - 典型芯片的结构是什么样子的？
+      - 静态RAM芯片是如何进行读出和写入操作？
+    - 2.**动态RAM**(**DRAM**)
+    - 3.**动态RAM** 和 **静态RAM** 的比较
+    
+    - 三、随机存取存储器(RAM)
+      - 1.静态RAM(SRAM)
+        - (1)静态RAM基本电路 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/63.png)
