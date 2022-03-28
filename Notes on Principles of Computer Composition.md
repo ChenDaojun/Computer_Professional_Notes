@@ -484,8 +484,75 @@
       - 典型芯片的结构是什么样子的？
       - 静态RAM芯片是如何进行读出和写入操作？
     - 2.**动态RAM**(**DRAM**)
+      - 保存 0 和 1 的原理是什么？
+      - 基本单元电路的构成是什么？
+      - 对单元电路如何读出和写入？
+      - 典型芯片的结构是什么样子的？
+      - 动态RAM芯片是如何进行读出和写入操作？
+      - 动态RAM为什么要刷新，刷新方法？
     - 3.**动态RAM** 和 **静态RAM** 的比较
     
     - 三、随机存取存储器(RAM)
       - 1.静态RAM(SRAM)
         - (1)静态RAM基本电路 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/63.png)
+        - (2)静态RAM基本电路的 **读** 操作 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/64.png)
+        - (3)静态RAM基本电路的 **写** 操作 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/65.png)
+        - (2.2) 静态 RAM 芯片举例
+          - ① Intel 2114 外举例 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/66.png)
+          - Intel 2114 RAM 矩阵(64x64) **读** 操作 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/67.png)
+          - Intel 2114 RAM 矩阵(64x64) **写** 操作 ![图](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/68.png)
+      - 2.动态RAM(DRAM)
+        - (1)动态RAM基本单元电路 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/69.png)
+        - (2)动态RAM芯片举例 
+          - 1.三管动态RAM芯片 (Intel 1103) **读操作**
+          - ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/70.png)
+          - 2.三管动态RAM芯片 (Intel 1103) **写操作**
+          - ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/71.png)
+          - 3.单管动态RAM 4116 (16k x 1位)外特性 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/72.png)
+          - 4.**4116**(16k x 1位) 芯片 **读** 原理 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/73.png)
+          - 5.**4116**(16k x 1位) 芯片 **写** 原理 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/74.png)
+        - **动态RAM刷新**
+          - **刷新与行地址有关**
+            - ①集中刷新 (存取周期位 0.5微秒) 以128*128矩阵为例 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/75.png)
+            - ②分散刷新 (存取周期位 1 微秒) 以128*128矩阵为例
+            - ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/76.png)
+            - ③分散刷新与集中刷新相结合 (异步刷新)
+            - 对于128x128的存储芯片 (存取周期为0.5微秒)
+            - 若每隔 **15.6微秒**刷新一行
+            - ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/77.png)
+            - 每行每个 2ms 刷新一次
+            - **将刷新安排在指令译码阶段，不会出现"死区"**
+          - 动态 RAM 和 静态 RAM 的比较
+          - ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/78.png)
+
+    - 四、**只读存储器** **ROM** 
+      - 早期的只读存储器——在厂家就写好了内容
+      - 改进1 -- 用户可以自己写 --一次性
+      - 改进2 -- 可以多次写 --要能对信息进行擦除
+      - 改进3 -- 电可擦写 --特定设备
+      - 改进4 -- 点可擦写 --直接连接到计算机
+      1. 掩膜ROM(MROM)
+        - 行列选择线交叉处有 MOS 管 为 "1"
+        - 行列选择线交叉处无 MOS 管 为 "0"
+      2. PROM(一次性编程) ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/79.png)
+        - 熔丝断  为"0"
+        - 熔丝未断 为"1"
+      3. EPROM(多次性编程)
+        - N型沟道浮动栅 MOS 电路 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/80.png)
+        - 样图 ![image](https://cdn.jsdelivr.net/gh/ChenDaojun/MyCDN/images/Notes-on-Principles-of-Computer-Composition/81.png)
+          - G 栅极
+          - S 源
+          - D 漏
+          - D端加正电压  形成浮动栅  S与D不导通为"0"
+          - D端不加正电压 不形成浮动栅 S与D导通为"1"
+      4. EEPROM(多次性编程)
+       - 电可擦写
+       - 局部擦写
+       - 全部擦写   
+      5. Flash Memory(闪速型存储器)
+       - **EPROM**   价格便宜  集成度高
+       - **EEPROM**  电可擦洗重写
+       - 比 **EEPROM** 快  具备 **一部分** **RAM** 功能
+
+    五、存储器和 CPU 的连接
+
